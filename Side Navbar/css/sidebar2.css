@@ -1,0 +1,87 @@
+/* {
+    box-sizing: border-box;
+    border: 1px solid blue;
+}
+
+html {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+*/
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
+html,body,.sidebar2,.main-content{
+  height:100%;
+}
+.sidebar2 {
+    background-color: #1a1f27;
+    padding: 0px;
+    box-shadow: 2px 2px 5px #262a35;
+    z-index: 1000;
+
+}
+.logo {
+    min-height:200px;
+    color:#afb1b5;
+}
+.logo>img {
+    margin-top: 30px;
+    padding: 10px;
+    border: 3px solid #68bdb9;
+    border-radius: 100%;
+    background-color: #fff;
+}
+.btn.Add-friend
+{
+  background-color:#46aba6;
+<!--#e65e50-->
+  border: 1px solid #50e6df;
+  color:#eee;
+}
+.btn.Add-friend:hover,.btn.Add-friend:active,.btn.Add-friend:active:focus,.btn.Add-friend:active:hover,.btn.Add-friend:visited,.btn.Add-friend:focus
+{
+  background-color:#68bdb9;
+  border: 0.5px solid transparent;
+  color:white;
+  outline:none;
+  font-weight:600;
+}
+.coins
+{
+  display:inline-block;
+  font-size:20px;
+font-family:'"Helvetica Neue",Helvetica,Arial,sans-serif';
+}
+.list {
+    color: #eee;
+    list-style: none;
+    padding-left: 0px;
+}
+li:nth-child(odd) {
+    background-color:#13171d;
+}
+li:nth-child(even) {
+
+}
+li>i {margin-right:15px;
+}
+.list> li {
+    padding: 15px 0px 15px 40px;
+    font-size: 16px;
+    font-weight:lighter;
+}
+.list>li:hover {
+
+    color: white;
+    box-shadow:1px 1px 10px 1px #50e6df inset;
+    transition: padding-left 0.2s linear;
+    padding-left: 60px;
+
+}
+.main-content
+{
+  background-image:../img/CS.jpg");
+}
