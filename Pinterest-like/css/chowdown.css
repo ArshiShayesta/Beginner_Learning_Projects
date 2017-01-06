@@ -1,0 +1,177 @@
+*
+{
+  font-family: calibri, sans-serif;
+}
+.navbar
+{
+  display:flex;
+  justify-content:space-around;
+  list-style: none;
+  padding-bottom: 15px;
+  border-bottom:1px solid #dfdfdf;
+
+}
+
+li.search, input
+{width:1500px;
+  flex-grow:1;
+  overflow-x: hidden;
+  border-radius:4px;
+}
+input
+{
+  width:100%;
+  background-color: #dfdfdf;
+  border:none;
+  border-radius:4px;
+  padding:10px;
+}
+input[placeholder="Search"]
+{
+  font-size:16px;
+ color:#9c9b9b;
+ font-weight:700;
+}
+li{
+    margin: auto 20px;
+    justify-content:flex-end;
+}
+i.fa{font-size:28px;
+  color:#9c9b9b;
+
+}
+.container
+{
+  max-width: 1300px;
+  column-width:250px;
+  column-gap:5px;
+
+margin:0 auto;
+}
+.card
+{ break-inside: avoid;
+  width:244px;
+  padding-top:15px;
+  margin:10px 2px;
+}
+.card:nth-child(2n+1)
+{
+  height:500px;
+}
+.card:nth-child(2n)
+{
+  height:450px;
+}
+.card:nth-child(3n-1)
+{
+  height:550px;
+}
+.card img
+{display:block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3%;
+
+}
+
+.card:hover
+{ border-radius: 3%;
+  background-color:#efefef;
+  cursor: zoom-in;
+}
+.meta
+{
+  margin: 5px 20px;
+  display:flex;
+  justify-content: space-between;
+}
+.image-info
+{
+  width:130px;
+}
+.title {
+    font-weight: 600;
+    color: #313131;
+    font-size: 18px;
+    line-height: 16px;
+}
+.image-source, .common-caption
+{
+font-size: 12px;
+color:#9c9b9b;
+
+}
+.image-source{
+  font-weight: 600;
+}
+.meta-user
+{margin: 5px 20px;
+  display:flex;
+  font-size:16px;
+  justify-content: space-between;
+  color:#696666;
+}
+.user
+{
+  display:flex;
+  justify-content:flex-start;
+}
+.actions
+{
+  font-size:8px;
+ color:#9c9b9b;
+}
+.meta-user h4, h5
+{margin:0px 5px;
+line-height:14px;
+}
+.profile-image img{
+  border-radius:50%;
+}
+.pins i.fa, .pins
+{
+  font-size: 12px;
+color:#9c9b9b;
+}
+.pins i.fa
+{
+  margin-right:3px;
+}
+.description
+{
+    line-height: 16px;
+}
+.title, .description, .image-source, .common-caption
+{
+  padding:5px 0px;
+}
+.image-holder
+{
+  position:relative;
+}
+.save-btn i.fa
+  {
+    margin-right:5px;
+    color:#efefef;
+    font-size:15px;
+
+}
+button.save-btn
+{
+  position:absolute;
+  background-color:#bd081c;
+  color:#efefef;
+  border:none;
+  text-align: center;
+  padding:10px;
+  border-radius:4px;
+  line-height:10px;
+  right:20px;
+  top:10px;
+  font-weight: 600;
+  display:none;
+}
+.card:hover button
+{
+  display:inline-block;
+}
