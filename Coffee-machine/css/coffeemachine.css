@@ -1,0 +1,247 @@
+body
+{background:grey;
+}
+.coffee-machine
+{
+position:relative;
+text-align:center;
+padding:5%;
+}
+.coffee-machine-upperpart
+{ display:inline-block;
+  background:linear-gradient(to right, #1b1a1a,#6f6a6a, rgba(140, 140, 136, 0.26));
+  box-shadow:inset 0px 0px 50px 20px black;
+  width:350px;
+  height:160px;
+  border-radius:10px;
+}
+.panel
+{ margin:0 auto;
+  margin-top:8px;
+  width:300px;
+  height:140px;
+  border: 3px solid #131212;
+  border-radius:10px;
+  background:linear-gradient(to right,#171616,#d0d0d0);
+  box-shadow:inset 2px 2px 40px 5px black, inset 0px 0px 2px 3px rgba(255, 255, 255, 0.57),inset 0px 0px 0px 3px black,inset 0px 0px 30px 10px black;
+}
+.options
+{
+list-style:none;
+float:right;
+text-align:justify;
+margin: 20px 20px 0px 0px;
+font-size:10px;
+color: #484545;
+font-family: monospace,sans-serif;
+}
+.options li{
+  margin:5px auto;
+  border:1px solid black;
+  border-radius:2px;
+  padding:3px;
+  background-color:#d0d0d0;
+  box-shadow:inset 0px 0px 5px 3px black;
+
+}
+.options-selected
+{
+  color: #fff;
+}
+.coffee-machine-middlepart
+{ position:relative;
+  margin:0 auto;
+  margin-top:-5px;
+ width:300px;
+ height:250px;
+ background:linear-gradient(to right,#171616,#d0d0d0);
+ box-shadow:inset 3px 2px 5px 5px black, inset -3px 0px 2px 5px white;
+ border-radius:4px;
+ text-align:right;
+}
+.pourer
+{
+  display:inline-block;
+  width:80px;
+  height:40px;
+  background-color:black;
+  margin-left:36px;
+  float:left;
+  border:1px solid #0e0e0e;
+  border-radius:2px 2px 30px 30px/ 40% 40%;
+  box-shadow:inset 0px 0px 5px 2px black;
+  background:linear-gradient(to right,#0e0e0e,#333232, white,#333030, #5a5252,white,white, #636262, #292727,white,grey);
+  z-index:1;
+}
+/*pourer-nozzle*/
+.pourer::after{
+  content:"";
+  display:inline-block;
+  margin-top:39px;
+  margin-right:20px;
+  width:35px;
+  height:30px;
+  background-color:white;
+  border:1px solid #1f1e1e;
+  border-radius:2px 2px 30px 30px/ 40% 40%;
+  box-shadow:inset 0px 0px 5px 2px black;
+  background:linear-gradient(to right,#0e0e0e,#fff, #464343,#333030, #484141,#5a5858, #fff,#524a4a,#5a5454, #fff,#fff,#333030);
+  z-index:-900;
+
+}
+.milk-container
+{ display:inline-block;
+  margin:40px 10px auto auto;
+  width:140px;
+  height:170px;
+  background-color:transparent;
+  border-radius:2px 2px 40px 40px;
+  box-shadow:inset 0px 0px 20px 3px #403e3e, inset -15px 0px 20px 4px white;
+}
+/*milk-container-cap*/
+.milk-container::before
+{ margin-top:-30px;
+  content:"";
+  width:140px;
+  height:40px;
+  background:#696666;
+  display:inline-block;
+  border-radius:2px 2px 10px 10px;
+      box-shadow: inset 0px 0px 20px 5px #0c0b0b, inset -15px 0px 20px 4px white;
+  z-index:-900;
+}
+/*Milk in container*/
+.milk-container::after
+{    margin-top: 48px;
+    margin-right: 5px;
+    content:"";
+    width:130px;
+    height:100px;
+    background:#fff;
+      border-radius: 2px 2px 35px 35px;
+    display:inline-block;
+}
+.milk-pipe
+{
+  width:10px;
+  height:200px;
+  padding:3px;
+  background-color:transparent;
+  z-index:-999;
+  margin-top:-220px;
+  margin-left:210px;
+  border:1px solid #403e3e;
+  box-shadow:inset 0px 0px 5px 3px #403e3e,inset -2px 0px 2px 3px white;
+}
+.milk-container-stand{
+    width:140px;
+    margin:13px 10px auto auto;
+    height:85px;
+    background:linear-gradient(to right,#1d1c1c,#d0d0d0);
+    box-shadow:inset 3px 2px 5px 5px #171616, inset -3px 0px 2px 5px white, 3px -7px 3px 3px #171616;
+    border-radius:4px;
+}
+.coffee-machine-bottom
+{     width: 400px;
+    border-bottom: 75px solid #2b2929;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    margin: auto auto;
+    margin: 0 auto;
+    margin-top: -15px;
+    z-index: -100000 !important;
+    position: relative;
+    display: inline-block;
+}
+.coffee-machine-bottom::after
+{
+  width:540px;
+  height:50px;
+  background-color:black;
+  content:"";
+  display:block;
+  margin-left:-70px;
+  top:75px;
+  position:absolute;
+  background:linear-gradient(to right,#1d1c1c,#d0d0d0);
+  box-shadow:inset 3px 2px 5px 5px black, inset -3px 0px 2px 5px white;
+}
+.cup-mat
+{
+  position:absolute;
+  display:inline-block;
+  width:130px;
+  height:70px;
+  border: 2px solid black;
+  box-shadow: inset 0px 0px 20px 10px black;
+  background: radial-gradient(#000,#1f1d1d, #000);
+border-radius:50%;
+transform:rotateX(50deg);
+margin-left: -415px;
+margin-top: -10px;
+
+}
+.cup
+{
+  display: inline-block;
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: transparent;
+      border: 2px solid black;
+      border-radius: 0px 0px 50px 50px;
+      padding: 0px 2px 4px 2px;
+      margin: auto auto;
+      margin-left: -400px;
+      margin-top: -70px;
+      z-index: 100000;
+      border-top-color: transparent;
+      box-shadow: inset -1px -3px 2px 2px #a79d9d;
+}
+.cup::before
+{ padding:2px;
+  width:100px;
+  height:30px;
+  border-radius:50%;
+  content:"";
+  display:inline-block;
+  background-color:transparent;
+  margin-top:-20px;
+  margin-left:-4px;
+  border:2px solid black;
+  box-shadow:inset 0px 0px 2px 2px #777272;
+
+}
+.coffee
+{
+  margin-left:5px;
+  width:90px;
+  height:70px;
+  background-color:#c19156;
+  margin-bottom:20px;
+  border-radius: 0px 0px 45px 45px;
+  z-index:-10000;
+  position:absolute;
+}
+.coffee::before
+{border-radius:50%;
+content:"";
+display:inline-block;
+background-color:#c19156;
+width:90px;
+height:30px;
+border-radius:50%;
+margin-top:-20px;
+box-shadow: inset 0px 0px 20px 2px #af6b18;
+z-index:-10000;
+
+}
+.coffee-pipe
+{    position: absolute;
+    width: 10px;
+    height: 124px;
+    background-color: transparent;
+    background-color: #c19156;
+    margin-top: -132px;
+    margin-left: 47px;
+}
